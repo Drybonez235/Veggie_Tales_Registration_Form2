@@ -6,10 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		5D74CE3D2A40D4A40000077F /* Veggie_Tales_Form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Veggie_Tales_Form.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		5D74CE362A40D4880000077F = {
 			isa = PBXGroup;
 			children = (
+				5D74CE3D2A40D4A40000077F /* Veggie_Tales_Form.cpp */,
 			);
 			sourceTree = "<group>";
 		};
