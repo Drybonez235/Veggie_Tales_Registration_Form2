@@ -9,12 +9,14 @@
 /* Begin PBXFileReference section */
 		5D74CE3D2A40D4A40000077F /* Veggie_Tales_Form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Veggie_Tales_Form.cpp; sourceTree = "<group>"; };
 		5D74CE3E2A40D6170000077F /* records.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = records.txt; sourceTree = "<group>"; };
+		5D9EDE4F2A4A2B1A00BB17A5 /* content.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = content.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		5D74CE362A40D4880000077F = {
 			isa = PBXGroup;
 			children = (
+				5D9EDE4F2A4A2B1A00BB17A5 /* content.h */,
 				5D74CE3E2A40D6170000077F /* records.txt */,
 				5D74CE3D2A40D4A40000077F /* Veggie_Tales_Form.cpp */,
 			);
