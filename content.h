@@ -7,20 +7,23 @@ using namespace std;
 class generic_form{
     
 public:
-    map<string, string> child_map;
+    vector<string> record_value_names_ptr;
+    vector<string> record_values_ptr;
+    vector<int> field_lengths_ptr;
+
     
-    generic_form(){
-    
-    }
-    
-    void set_map_value(string key, string value){
-        child_map.insert(make_pair(key, value));
-    }
-    
-    void check_value_length_and_add_to_map(vector<string> &record_values, vector<int> &field_lengths, vector<string> &record_values_names){
-        int record_value_count = record_values.size();
+    generic_form(vector<string> &record_values, vector<int> &field_lengths, vector<string> &record_values_names){
+    record_value_names_ptr = record_values_names;
+        field_lengths_ptr = field_lengths;
+        record_values_ptr = record_values;
         
-        if(record_value_count > record_values_names.size()){
+    }
+    
+    void check_value_length(){
+        
+       int record_value_count = record_values_ptr.size();
+        
+        if(record_value_count > record_value_names_ptr.size()){
             cout << "There were more records then fields!!!";
         }
         
@@ -28,13 +31,12 @@ public:
         int value_character_limits;
         
         for(int i = 0; i < record_value_count; i++){
-        value_character_count = record_values[i].size();
-        value_character_limits = field_lengths[i];
+        value_character_count = record_values_ptr[i].size();
+        value_character_limits = field_lengths_ptr[i];
             if(value_character_count < value_character_limits){
-                set_map_value(record_values_names[i], record_values[i]);
                 
             } else {
-                    cout << "Value Skipped" << endl;
+                record_values_ptr[i] = "";
                 }
            }//End of for loop
         }//end of check_value_lengths meathod

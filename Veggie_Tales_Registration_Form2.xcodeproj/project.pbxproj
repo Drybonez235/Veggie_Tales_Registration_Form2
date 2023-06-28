@@ -8,10 +8,9 @@
 
 /* Begin PBXFileReference section */
 		5D74CE3D2A40D4A40000077F /* Veggie_Tales_Form.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Veggie_Tales_Form.cpp; sourceTree = "<group>"; };
-		5D74CE3E2A40D6170000077F /* records.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = records.txt; sourceTree = "<group>"; };
 		5D9EDE4F2A4A2B1A00BB17A5 /* content.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = content.h; sourceTree = "<group>"; };
-		5D9EDE502A4B170F00BB17A5 /* meta_data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = meta_data.txt; sourceTree = "<group>"; };
 		5D9EDE512A4B1AF100BB17A5 /* file_reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = file_reader.h; sourceTree = "<group>"; };
+		5D9EDE532A4CA85300BB17A5 /* html_generator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = html_generator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -19,9 +18,8 @@
 			isa = PBXGroup;
 			children = (
 				5D9EDE4F2A4A2B1A00BB17A5 /* content.h */,
-				5D9EDE502A4B170F00BB17A5 /* meta_data.txt */,
-				5D74CE3E2A40D6170000077F /* records.txt */,
 				5D74CE3D2A40D4A40000077F /* Veggie_Tales_Form.cpp */,
+				5D9EDE532A4CA85300BB17A5 /* html_generator.h */,
 				5D9EDE512A4B1AF100BB17A5 /* file_reader.h */,
 			);
 			sourceTree = "<group>";

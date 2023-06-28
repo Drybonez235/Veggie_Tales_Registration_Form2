@@ -6,6 +6,7 @@
 #include <string>
 #include "content.h"
 #include "file_reader.h"
+#include "html_generator.h"
 
 using namespace std;
 
@@ -18,11 +19,13 @@ int main(){
    vector<string> values_array = {"name", "dob", "age", "sex", "address", "city", "state", "zip", "home_phone", "cell_phone", "other_phone", "email", "email_list", "parent_1", "parent_2", "emergency_contact1_name", "emeergency_contact1_phone", "emergency_contact2_name", "emergency_contact2_phone", "medical_issues", "allergies", "medications", "diet", "special", "walk_home", "aproved_pickup_persons"};
     
     file_reader file_1(file_path);
-    cout << file_1.file_contents_vector[0][0] << endl;
-    generic_form veggie_tales;
-    veggie_tales.check_value_length_and_add_to_map(file_1.file_contents_vector[0], field_lengths, values_array);
-   cout << veggie_tales.child_map["name"] << endl;
-    
+    for(int i = 0; i < file_1.file_contents_vector.size(); i++){
+        generic_form veggie_tales(file_1.file_contents_vector[i], field_lengths, values_array);
+        veggie_tales.check_value_length();
+        cout << veggie_tales.record_value_names_ptr[1] << endl;
+        html_generator(veggie_tales.record_values_ptr, veggie_tales.field_lengths_ptr);
+    }
     cout << "end of the program" << endl;
+        
     return 0;
 }
